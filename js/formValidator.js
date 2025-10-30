@@ -27,7 +27,6 @@ function handleInputMask(e) {
     e.target.value = value.replace(/\D/g, '').replace(/(\d{5})(\d)/, '$1-$2');
   }
 
-  // Validação em tempo real
   validateField(e.target);
 }
 
@@ -129,7 +128,6 @@ function validateField(field) {
 function validateCPF(cpf) {
   if (cpf.length !== 11) return false;
 
-  // Validação básica de CPF
   let sum = 0;
   for (let i = 0; i < 9; i++) {
     sum += parseInt(cpf.charAt(i)) * (10 - i);
