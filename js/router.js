@@ -7,11 +7,9 @@ const routes = {
 };
 
 export function initRouter() {
-  // Navegação inicial
   const initialHash = window.location.hash || '#home';
   navigateTo(initialHash);
 
-  // Manipula clique nos links
   document.addEventListener('click', (e) => {
     if (e.target.matches('[data-link]')) {
       e.preventDefault();
@@ -20,7 +18,6 @@ export function initRouter() {
     }
   });
 
-  // Manipula mudanças de hash
   window.addEventListener('hashchange', () => {
     loadPage(window.location.hash);
   });

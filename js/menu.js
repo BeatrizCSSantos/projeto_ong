@@ -7,7 +7,6 @@ export function initMenu() {
       navLinks.classList.toggle('active');
     });
 
-    // Fecha menu ao clicar em um link
     document.addEventListener('click', (e) => {
       if (e.target.matches('.nav-links a')) {
         navLinks.classList.remove('active');
