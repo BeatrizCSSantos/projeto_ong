@@ -1,3 +1,14 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const toggleButton = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  if (toggleButton && navLinks) {
+    toggleButton.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  }
+});
+
 document.addEventListener('input', (e) => {
   const { id, value } = e.target;
 

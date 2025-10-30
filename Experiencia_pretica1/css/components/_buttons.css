@@ -1,0 +1,33 @@
+button,
+.botao {
+  background: var(--color-primary);
+  color: var(--color-light);
+  padding: var(--space-2) var(--space-3);
+  border: none;
+  border-radius: 8px;
+  font-size: var(--font-md);
+  cursor: pointer;
+  display: inline-block;
+  width: 132px;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+button:hover,
+.botao:hover {
+  background: var(--color-primary-dark);
+}
+
+button:disabled {
+  background: var(--color-gray);
+  cursor: not-allowed;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}

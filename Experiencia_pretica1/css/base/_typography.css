@@ -1,0 +1,16 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: var(--color-light);
+  color: var(--color-dark);
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: var(--font-xl);
+}
+
+h2 {
+  font-size: var(--font-xl);
+  margin-bottom: var(--space-2);
+  color: var(--color-accent);
+}

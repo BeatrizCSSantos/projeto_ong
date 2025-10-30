@@ -1,0 +1,44 @@
+header {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  padding: var(--space-2);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav h1 {
+  font-size: var(--font-xl);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: var(--space-2);
+}
+
+nav a {
+  color: var(--color-light);
+  padding: var(--space-1) var(--space-2);
+  border-radius: 8px;
+}
+
+nav a:hover,
+nav a.ativo {
+  background: var(--color-secondary);
+  color: var(--color-dark);
+}
+
+/* Menu mobile */
+.menu-toggle {
+  display: none;
+  font-size: var(--font-xl);
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: var(--color-light);
+}

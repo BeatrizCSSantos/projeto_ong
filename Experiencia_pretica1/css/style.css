@@ -1,42 +1,23 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: #fafafa;
-  color: #333;
-}
+/* ================================
+   🌐 IMPORTAÇÕES GERAIS
+================================== */
 
-header {
-  background-color: #d06224;
-  color: #fff;
-  padding: 1rem;
-}
+/* Base */
+@import url("./base/_reset.css");
+@import url("./base/_variables.css");
+@import url("./base/_typography.css");
+@import url("./base/_spacing.css");
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-}
+/* Layout */
+@import url("./layout/_header.css");
+@import url("./layout/_main.css");
+@import url("./layout/_footer.css");
 
-nav a {
-  color: #fff;
-  text-decoration: none;
-}
+/* Componentes */
+@import url("./components/_buttons.css");
+@import url("./components/_forms.css");
+@import url("./components/_alerts.css");
+@import url("./components/_badges.css");
 
-nav a.ativo {
-  text-decoration: underline;
-}
-
-main {
-  padding: 2rem;
-}
-
-section {
-  margin-bottom: 2rem;
-}
-
-footer {
-  background: #ae431e;
-  color: #fff;
-  text-align: center;
-  padding: 1rem;
-}
+/* Responsividade */
+@import url("./responsive/_breakpoints.css");

@@ -1,0 +1,15 @@
+.alert {
+  padding: var(--space-2);
+  border-radius: 8px;
+  margin: var(--space-2) 0;
+}
+
+.alert.success {
+  background: var(--color-success);
+  color: var(--color-light);
+}
+
+.alert.error {
+  background: var(--color-error);
+  color: var(--color-light);
+}
