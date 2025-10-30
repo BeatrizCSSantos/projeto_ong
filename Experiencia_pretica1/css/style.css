@@ -3,21 +3,45 @@
 ================================== */
 
 /* Base */
-@import url("./base/_reset.css");
-@import url("./base/_variables.css");
-@import url("./base/_typography.css");
-@import url("./base/_spacing.css");
+@import url('./base/_reset.css');
+@import url('./base/_variables.css');
+@import url('./base/_typography.css');
+@import url('./base/_spacing.css');
 
 /* Layout */
-@import url("./layout/_header.css");
-@import url("./layout/_main.css");
-@import url("./layout/_footer.css");
+@import url('./layout/_header.css');
+@import url('./layout/_main.css');
+@import url('./layout/_footer.css');
 
 /* Componentes */
-@import url("./components/_buttons.css");
-@import url("./components/_forms.css");
-@import url("./components/_alerts.css");
-@import url("./components/_badges.css");
+@import url('./components/_buttons.css');
+@import url('./components/_forms.css');
+@import url('./components/_alerts.css');
+@import url('./components/_badges.css');
 
 /* Responsividade */
-@import url("./responsive/_breakpoints.css");
+@import url('./responsive/_breakpoints.css');
+
+/* Estilos para validação de formulário */
+input.error {
+  border-color: #d32f2f !important;
+  background-color: #ffebee;
+}
+
+.error-message {
+  color: #d32f2f;
+  font-size: 0.8em;
+  display: block;
+  margin-top: 4px;
+}
+
+/* Loading state */
+.loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Transições suaves para SPA */
+main {
+  transition: opacity 0.3s ease;
+}

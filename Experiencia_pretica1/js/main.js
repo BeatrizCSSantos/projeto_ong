@@ -1,0 +1,10 @@
+import { initRouter } from './router.js';
+import { initMenu } from './menu.js';
+import { initFormValidator } from './formValidator.js';
+
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('Inicializando aplicação...');
+  initMenu();
+  initRouter();
+  initFormValidator();
+});

@@ -6,46 +6,23 @@
   <meta name="description" content="Plataforma para gestão de ONGs, projetos sociais e voluntariado." />
   <title>ONG Conecta - Início</title>
   <link rel="stylesheet" href="css/style.css" />
-  <script src="js/script.js" defer></script>
-
+  <script type="module" src="js/main.js"></script>
 </head>
 <body>
   <header>
     <nav>
       <h1 class="logo">ONG Conecta</h1>
-       <button class="menu-toggle" aria-label="Abrir menu">☰</button>
-      <ul class="nav-links">
-        <li><a href="index.html">Início</a></li>
-        <li><a href="projetos.html">Projetos</a></li>
-        <li><a href="cadastro.html">Cadastro</a></li>
-      </ul>
+      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+        <ul class="nav-links">
+            <li><a href="/" data-link class="ativo">Início</a></li>
+            <li><a href="/projetos" data-link>Projetos</a></li>
+            <li><a href="/cadastro" data-link>Cadastro</a></li>
+        </ul>
     </nav>
   </header>
 
   <main>
-    <section id="sobre">
-      <h2>Quem Somos</h2>
-      <p>A ONG Conecta apoia iniciativas sociais e conecta voluntários, doadores e projetos em todo o Brasil.</p>
-      <img src="assets/img/conecta.png" alt="Equipe da ONG Conecta trabalhando" style="width: 320px"/>
-    </section>
-
-    <section id="missao">
-      <h2>Missão, Visão e Valores</h2>
-      <ul>
-        <li><strong>Missão:</strong> Promover o impacto social positivo por meio da tecnologia e da colaboração.</li>
-        <li><strong>Visão:</strong> Ser referência nacional em transformação social digital.</li>
-        <li><strong>Valores:</strong> Transparência, empatia e compromisso.</li>
-      </ul>
-    </section>
-
-    <section id="contato">
-      <h2>Contato</h2>
-      <address>
-        <p>Email: <a href="mailto:contato@ongconecta.org">contato@ongconecta.org</a></p>
-        <p>Telefone: (11) 99999-9999</p>
-        <p>Endereço: Rua da Solidariedade, 100 - São Paulo/SP</p>
-      </address>
-    </section>
+    <!-- Conteúdo carregado dinamicamente via SPA -->
   </main>
 
   <footer>
